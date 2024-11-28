@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row ;
+    background-color: red;
+    gap: 30px;
+    padding: 10px 20px;
+}
+.navbar div button{
+    /* padding-left:50px  */
+    margin-left: 20px;
+}
+/* div{background-color: blue;} */
+/* h3{color:blue} */
