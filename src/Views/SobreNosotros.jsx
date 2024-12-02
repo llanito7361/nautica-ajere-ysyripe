@@ -1,8 +1,11 @@
 import React from 'react'
+import InfoAboutUs from '../components/InfoAboutUs/InfoAboutUs'
 
 const SobreNosotros = () => {
   return (
-    <div>SobreNosotros</div>
+    <div>
+      <InfoAboutUs/> 
+    </div>
   )
 }
 

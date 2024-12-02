@@ -1,0 +1,66 @@
+.aside-buttons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    /* transform: translateY(-50%); */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* height: 60px; */
+    /* width: 90px: */
+  }
+  
+  .button {
+     width: 75px;
+    height: 55px; 
+    background-color: #ccc;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .button img{
+    width: 40px;
+    height: 40px;
+    /* transition: transform 0.2s ease, background-color 0.2s ease; */
+  }
+  
+  .button p {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    transform: scale(1.2);
+    background-color: #555;
+  }
+  
+  .facebook {
+    background-color: #3b5998; /* Azul de Facebook */
+  }
+  
+  .instagram {
+    background-color: #e1306c; /* Rosa de Instagram */
+  }
+  
+  .wsp {
+    background-color: #25d366; /* Verde de WhatsApp */
+  }
+  
+  .facebook:hover {
+    background-color: #2d4373;
+  }
+  
+  .instagram:hover {
+    background-color: #b8235a;
+  }
+  
+  .wsp:hover {
+    background-color: #1ebe54;
+  }
+  

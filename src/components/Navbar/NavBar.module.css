@@ -1,14 +1,54 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
-    flex-direction:row ;
-    background-color: red;
-    gap: 30px;
+    align-items: center;
     padding: 10px 20px;
-}
-.navbar div button{
-    /* padding-left:50px  */
+  }
+  
+  .linksRight {
+    display: flex;
+    gap: 20px; /* Espacio entre links */
+    align-items: center; /* Alineación vertical */
+    position: relative; /* Necesario para dropdown */
+  }
+  
+  .navlink {
+    text-decoration: none;
     margin-left: 20px;
-}
-/* div{background-color: blue;} */
-/* h3{color:blue} */
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .navlink:hover {
+    color: black;
+  }
+  
+  .dropdownContainer {
+    position: relative; /* Para el dropdown absoluto */
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%; /* Justo debajo del contenedor */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1000;
+    min-width: 150px;
+  }
+  
+  .dropdown .navlink {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .dropdown .navlink:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+  }
+  

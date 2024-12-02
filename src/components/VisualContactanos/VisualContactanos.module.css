@@ -1,0 +1,16 @@
+.visualContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.contacImg{
+    height: auto;
+    width: 40vw;
+
+ }
+ .contactVisualParagraph{
+    color:blue
+ }

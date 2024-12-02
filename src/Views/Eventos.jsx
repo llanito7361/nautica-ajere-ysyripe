@@ -1,9 +1,12 @@
 
-import React from 'react'
+// import React from 'react'
+import { Outlet } from "react-router-dom"
 
 const Eventos = () => {
   return (
-    <div>Eventos</div>
+    <>
+      <Outlet />
+    </>
   )
 }
 
