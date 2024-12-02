@@ -11,3 +11,4 @@ Día 5-6: Clima y Optimizaciones
 4h: Revisar UI/UX y agregar transiciones.
 Día 7: Pruebas y Deploy
 8h: Pruebas finales y despliegue.# nautica-ajere-ysyripe
+# papucho
