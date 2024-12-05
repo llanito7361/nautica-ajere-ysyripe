@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import styles from './NavBar.module.css';
 import { NavLink } from 'react-router-dom';
-import LOGO from '../../assets/icons/logo.jpg' 
+import logoBlack from '../../assets/logoblack.jpg'
+import logowhite from '../../assets/logowhite.jpg'
+ import LOGO from '../../assets/icons/logo.jpg' 
 
 const NavBar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -10,7 +12,7 @@ const NavBar = () => {
     <div className={styles.navbar}>
       <div className="linksLeft">
         <NavLink className={styles.navlink} to='/'>
-          <img src={LOGO} alt="not found" style={{ height: '80px' }} />
+          <img src={logowhite} alt="not found" style={{ height: '80px' }} />
         </NavLink>
       </div>
       <div className={styles.linksRight}>
@@ -19,7 +21,7 @@ const NavBar = () => {
   onMouseEnter={() => setShowDropdown(true)} 
   onMouseLeave={() => setShowDropdown(false)}
 >
-  <NavLink className={styles.navlink} to='/eventos'>Eventos</NavLink> {/* Cambiado a NavLink */}
+  <NavLink className={styles.navlink} to='/eventos/travesias'>Eventos</NavLink> {/* CAMBIAR A /eventos solo cuando se arregle*/}
   {showDropdown && (
     <div className={styles.dropdown}>
       <NavLink to='/eventos/travesias'>Travesías</NavLink>

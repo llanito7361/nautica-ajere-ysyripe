@@ -1,0 +1,43 @@
+.tresBotones {
+    background-color: gray;
+    height: 100px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0; /* Empieza invisible */
+    transform: translateY(50px); /* Desplazada hacia abajo */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
+    text-decoration: none;
+}
+
+.tresBotones.visible {
+    opacity: 1; /* Aparece gradualmente */
+    transform: translateY(0); /* Se posiciona correctamente */
+}
+.navLink{
+    text-decoration: none;
+    color: inherit
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 3px solid red;
+    border-radius: 50px;
+    height: 60px;
+    width: 200px;
+    gap: 10px;
+}
+
+.boton img {
+    height: 30px;
+}
+
+.boton p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}

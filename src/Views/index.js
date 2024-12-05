@@ -2,10 +2,9 @@ import Contactanos from './Contactanos/Contactanos';
 import Eventos from './Eventos'; 
 import Root from './Root/Root';
 import SobreNosotros from './SobreNosotros'
-import Escuela from './Escuela'
-import Campamentos from './Campamentos'
-import Travesias from './Travesias.jsx'
-
-import Inicio from './Inicio';
+import Escuela from './Escuela/Escuela.jsx'
+import Campamentos from './Campamento/Campamentos.jsx'
+import Travesias from './Travesias/Travesias.jsx'
+import Inicio from './Inicio/Inicio.jsx';
 
 export {Contactanos, Eventos,Root,SobreNosotros, Escuela,Campamentos, Travesias, Inicio}
