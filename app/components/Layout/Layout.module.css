@@ -1,0 +1,19 @@
+.rootContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura total de la ventana */
+  }
+  
+  .mainContent {
+    flex: 1; /* Este elemento crecerá para ocupar todo el espacio disponible */
+    display: flex;
+    flex-direction: column; /* Garantiza el flujo interno en la dirección vertical */
+    justify-content: center;
+  }
+  
+  .everywhereComponents {
+    width: 100%;
+  }
+  .footer {
+  margin-top: auto; /* Empuja el footer al final del contenedor */
+}

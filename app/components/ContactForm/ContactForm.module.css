@@ -1,0 +1,89 @@
+/* Estilo del formulario */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Inputs */
+  .contactInput {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Textarea */
+  .contactTextarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none; /* Evita redimensionar */
+  }
+  
+  /* Botón */
+  .contactButton {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Breakpoints */
+  
+  /* Tablet (768px - 1024px) */
+  @media (min-width: 768px) {
+    .contactForm {
+      max-width: 500px; /* Formulario ligeramente más ancho */
+      padding: 1.5rem;
+    }
+  
+    .contactInput,
+    .contactTextarea {
+      font-size: 1.125rem; /* Aumenta el tamaño de fuente */
+    }
+  
+    .contactButton {
+      font-size: 1.125rem;
+    }
+  }
+  
+  /* Desktop (>1024px) */
+  @media (min-width: 1024px) {
+    .contactForm {
+      max-width: 600px; /* Formulario más espacioso */
+      padding: 2rem;
+    }
+  
+    .contactInput,
+    .contactTextarea {
+      font-size: 1.25rem;
+      padding: 1rem;
+    }
+  
+    .contactButton {
+      font-size: 1.25rem;
+      padding: 1rem;
+    }
+  }
+  

@@ -1,0 +1,93 @@
+/* Contenedor general del footer */
+.footer {
+    /* background-color: #2c2c2c; */
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px -4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Parte superior del footer */
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Sección izquierda: Imagen y ubicación */
+  .leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .footerImg {
+    width: 120px;
+    height: auto;
+  }
+  
+  .locationLink {
+    text-decoration: none;
+    /* color: #ffcc00; */
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  /* .locationLink:hover {
+    color: #ffa500;
+  }
+   */
+  /* Sección derecha: Teléfono y correo */
+  .rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+/*   
+  .highlight {
+    color: #ffcc00;
+  } */
+  
+  /* Parte inferior: Copyright */
+  .bottomSection {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .topSection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .leftSection,
+    .rightSection {
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 15px;
+    }
+  
+    .locationLink,
+    .highlight {
+      font-size: 12px;
+    }
+  
+    .bottomSection {
+      font-size: 12px;
+    }
+  }
+  

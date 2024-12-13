@@ -1,0 +1,76 @@
+/* Estilos generales para el carrusel */
+.carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Ocupa el 80% de la altura de la pantalla */
+    background-color: #f9f9f9; /* Color de fondo opcional */
+    padding: 10px;
+  }
+  .carousel-inner {
+  height: 100%; /* Asegura que el contenedor siempre tenga la altura máxima disponible */
+}
+
+  /* Estilo para el texto de prueba */
+  .pruebita {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilo para las imágenes del carrusel */
+  .carousel-inner {
+    height: 100%; /* Se ajusta al contenedor */
+  }
+  
+  .carouselImg {
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    width: 100%;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+  }
+  
+  /* Estilos para los controles */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* Ajusta el tamaño de las áreas de los botones */
+  }
+  
+  /* Estilo opcional para el texto accesible */
+  .visually-hidden {
+    display: none; /* Ocultar el texto adicional si no es necesario */
+  }
+  
+/* Estilo para las imágenes del carrusel */
+.carouselImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Garantiza que las imágenes llenen el contenedor sin deformarse */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Suaviza la transición */
+  }
+  
+  /* Asegura que las imágenes no se expandan fuera del contenedor durante la transición */
+  .carousel-item {
+    height: 100%; /* Se asegura que cada ítem del carrusel ocupe toda la altura disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-item.active .carouselImg {
+    transform: scale(1);
+  }
+  
+  .carousel-item-next .carouselImg,
+  .carousel-item-prev .carouselImg {
+    transform: scale(1);
+    opacity: 1;
+  }

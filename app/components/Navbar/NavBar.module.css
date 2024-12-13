@@ -1,0 +1,103 @@
+/* Contenedor principal del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+  max-height: 70px;
+}
+
+/* Logo */
+.linksLeft {
+  display: flex;
+  align-items: center;
+}
+
+.linksRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navlinkImage {
+  height: 40px;
+  width: auto;
+}
+
+/* Ícono del menú hamburguesa */
+.hamburgerIcon {
+  display: none;
+  cursor: pointer;
+  z-index: 15;
+  position: relative; /* No afecta el flujo del documento */
+}
+
+.hamburgerIconImage {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Menú móvil */
+.mobileDropdown {
+  display: none; /* Ocultar inicialmente */
+  flex-direction: column;
+  gap: 10px;
+  position: absolute; /* Posiciona relativo al ícono */
+  top: 100%; /* Justo debajo del ícono */
+  left: 0;
+  background-color: #fff;
+  padding: 10px 15px;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-in-out;
+  z-index: 20;
+}
+
+.mobileDropdown.active {
+  display: flex; /* Mostrar menú al activarlo */
+}
+
+/* Links en el menú móvil */
+.mobileDropdown .navlink {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+/* Animación del menú */
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+  @media (max-width: 1024px) {
+      .linksRight {
+        display: none;  
+      }
+      .hamburgerIcon {
+        display: block;  
+        position: fixed;
+        right: 30px;
+      }
+  
+      .mobileDropdown{
+        display: flex;
+        position: relative;
+        top:150px;
+      }
+    }
