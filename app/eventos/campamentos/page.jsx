@@ -5,14 +5,14 @@ import WeatherWidget from "../../components/WeatherWidget/WeatherWidget";
 const Campamentos = () => {
   return (
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h3 style={{ textAlign: 'center', color: '#2c3e50' }}>Campamentos Tauki</h3>
+      <h3 style={{ textAlign: 'center', color: '#2c3e50' }}>Campamentos  </h3>
       <Image 
         src={campamento} 
         alt="Campamento Tauki" 
         style={{ width: '100%', height: 'auto', borderRadius: '10px', marginBottom: '20px' }}
       />
       <p>
-        Bienvenidos a los <strong>Campamentos Tauki</strong>, una experiencia única para conectar con la naturaleza, disfrutar de actividades al aire libre, y fortalecer vínculos en un entorno seguro y divertido.
+        Bienvenidos a los <strong>Campamentos </strong>, una experiencia única para conectar con la naturaleza, disfrutar de actividades al aire libre, y fortalecer vínculos en un entorno seguro y divertido.
       </p>
       <p>
         Ubicados en la hermosa región de la Granja Don Julián, nuestros campamentos ofrecen una amplia variedad de actividades, desde senderismo y juegos de orientación, hasta talleres de supervivencia y noches bajo las estrellas.
