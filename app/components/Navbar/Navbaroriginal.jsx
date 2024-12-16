@@ -23,6 +23,8 @@ const NavBar = () => {
               <Link className={styles.navlink} href="/eventos/travesias">Travesías</Link>
               <Link className={styles.navlink} href="/eventos/escuela">Escuela</Link>
               <Link className={styles.navlink} href="/eventos/campamentos">Campamentos</Link>
+                            <Link className={styles.navlink} href="/eventos/colonia">Colonia</Link>
+
             </div>
      )
   }

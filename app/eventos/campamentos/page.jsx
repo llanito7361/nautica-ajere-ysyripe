@@ -43,7 +43,7 @@ const Campamentos = () => {
       </ul>
 
       <p>
-        ¡Te esperamos para vivir una aventura inolvidable en los <strong>Campamentos Tuki</strong>!
+        ¡Te esperamos para vivir una aventura inolvidable en los <strong>Campamentos</strong>!
       </p>
     </div>
   );
