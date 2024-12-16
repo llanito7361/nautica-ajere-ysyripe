@@ -109,7 +109,7 @@ const TresBotones = () => {
           <p>CAMPAMENTO</p>
         </div>
       </Link>
-      <Link className={styles.navLink} href="/eventos/campamentos">
+      <Link className={styles.navLink} href="/eventos/colonia">
         <div className={`${styles.boton} ${styles.boton3}`}>
           <Image width={30} height={30} src={colonia} alt="Icono Campamentos" />
           <p>COLONIA</p>
