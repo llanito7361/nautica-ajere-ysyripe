@@ -5,19 +5,28 @@
   align-items: center;
   padding: 10px 20px;
   background-color: #fff;
-  position: relative;
-  z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+   height: 70px;
+ 
+    max-height: 85px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px -4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 /* Logo */
 .linksLeft {
   display: flex;
   align-items: center;
+  /* background-color: pink; */
 }
 
 .navlinkImage {
   height: 40px;
   width: auto;
+  position: sticky;
+
 }
 
 /* Menú principal (desktop) */
@@ -34,7 +43,8 @@
 
 .dropdown {
   position: absolute;
-  top: 100%;
+  top:  35px;
+  /* bottom: 10px; */
   left: 0;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -59,7 +69,7 @@
 
 /* Menú móvil */
 .mobileDropdown {
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 0;
   background-color: #fff;
@@ -95,26 +105,74 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .desktopOnly {
-    display: none; /* Ocultar menú principal */
+    display: none ;
   }
 
   .mobileOnly {
-    display: flex; /* Mostrar ícono hamburguesa */
+    display: flex 
   }
 
   .dropdown {
-    display: none; /* Deshabilitar dropdown en móvil */
+    display: none;   
   }
 
   .hamburgerIcon{
     display: block;
     position: relatives;
     right: -1000px;
-    /* width: 1000px; */
+    /* width: 1000px;  
   }
   .hamburgerIconImage{
     width: 30px;
   }
+} */
+
+@media (max-width: 1024px) {
+
+  .navbar{
+      min-height: 50px;
+  }
+
+  .linksRight {
+    display: none;  
+  }
+  .linksLeft{
+    /* background-color: red; */
+    position: fixed;
+    left: 15px;
+  }
+  .hamburgerIcon {
+    display: block;  
+    position: fixed;
+    right: 30px;
+  }
+
+  /* .mobileDropdown{
+    display: flex;
+    position: relative
+    ;
+    top:200px;
+    left:575px;
+
+    background-color: blue;
+    width: 150px;
+    border: 1px solid gray;
+  } */
+
+}
+
+@media (max-width: 768px) {
+ 
+
+  .mobileDropdown{
+    /* display: flex; */
+    /* position: absolute; */
+    /* left:575px; */
+    /* background-color: blue; */
+    /* width: 150px; */
+    /* border: 1px solid gray; */
+  }
+
 }

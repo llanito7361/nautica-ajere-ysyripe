@@ -1,9 +1,16 @@
-import { tour } from "../../assets/index";
-const Travesias  = () => {
+import Image from "next/image";
+import travesiasImage from "../../../public/assets/tour.jpg";
+import styles from "./travesias.module.css";
+
+const Travesias = () => {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', margin: '20px', lineHeight: '1.6' }}>
+    <div className={styles.container}>
       <h1>Travesías Náuticas - Granja Don Julián</h1>
-      <img src={tour} alt="" />
+      <Image 
+        src={travesiasImage} 
+        alt="image not found" 
+        className={styles.image} 
+      />
       <p>
         Bienvenidos a nuestras travesías náuticas en la Granja Don Julián. 
         Nuestro objetivo es ofrecer una experiencia única y enriquecedora en contacto con la naturaleza y el río.
@@ -28,5 +35,6 @@ const Travesias  = () => {
       <p>Ven y vive la experiencia de nuestras travesías náuticas. ¡La naturaleza te espera!</p>
     </div>
   );
-}
-export default Travesias
+};
+
+export default Travesias;

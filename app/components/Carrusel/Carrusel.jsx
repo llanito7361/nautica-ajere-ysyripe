@@ -3,23 +3,36 @@
 import dynamic from "next/dynamic";
 
 const ImageGallery = dynamic(() => import("react-image-gallery"), { ssr: false });
-
+// import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
-import {heberwithgroup,
-  rabaska1,
-  // rabaska2,
-  travelgroup1,} from '../../assets/index.js'
+// import {heberwithgroup,
+//   // rabaska1,
+//   // rabaska2,
+//   travelgroup1,fogon} from '../../assets/index.js'
+
 
 const Carrusel  = () => {
-
   const images = [
-    {original:  heberwithgroup , },
-    {original:   rabaska1 , },
-
-    // {original:  rabaska2 , },
-    {original:  travelgroup1 , },
+    { 
+      original: "/assets/fogon.jpg", 
+      // description: "Fogón" 
+    },
+    { 
+      original: "/assets/papuchoSmyling.png", 
+      // description: "Fogón" 
+    },
+    { 
+      original: "/assets/travelgroup1.png", 
+      // description: "Fogón" 
+    },
+    ,
+    { 
+      original: "/assets/ocaso2.jpg", 
+      // description: "Fogón" 
+    },
   ];
 
+ 
   return (
     <div
     //  style={{width:'100vh', margin: 'auto'}}

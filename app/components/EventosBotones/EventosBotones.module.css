@@ -1,0 +1,98 @@
+.tresBotones {
+  /* background-color: #f0f0f0; Color de fondo suave */
+  height: auto;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  padding: 1rem;
+}
+
+.tresBotones.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo de los botones */
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 3px solid #0070f3; /* Color más llamativo */
+  border-radius: 50px;
+  height: 60px;
+  width: 200px;
+  gap: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.boton img {
+  height: 30px;
+}
+
+.boton p {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Links */
+.navLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Efectos al pasar el ratón */
+.boton:hover {
+  background-color: #0070f3;
+  color: white;
+}
+
+.boton:hover img {
+  transform: scale(1.1); /* Efecto de aumento para la imagen */
+}
+
+/* Responsivo */
+
+/* Mobile (pantallas pequeñas, apilados verticalmente) */
+@media (max-width: 768px) {
+  .tresBotones {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .boton {
+    height: 50px;
+    width: 90%;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .boton img {
+    height: 20px; /* Tamaño reducido del logo */
+  }
+
+  .boton p {
+    font-size: 0.8rem; /* Texto más pequeño */
+  }
+}
+
+/* Tablet (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tresBotones {
+    flex-wrap: nowrap;
+  }
+
+  .boton {
+    height: 60px;
+    width: 150px;
+  }
+}

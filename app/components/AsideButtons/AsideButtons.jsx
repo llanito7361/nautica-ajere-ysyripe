@@ -1,5 +1,5 @@
 import "./AsideButtons.css";
-import { facebook, instagram, whatsapp } from "../../assets/icons/index";
+import { facebook, instagram, whatsapp } from "../../../public/assets/icons/index";
 import Image from "next/image";
 const URL_FACEBOOK =
   "https://web.facebook.com/Dr.Notebooks/?locale=es_LA&_rdc=1&_rdr";

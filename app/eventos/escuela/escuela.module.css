@@ -1,0 +1,84 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+  }
+  
+  .container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .textoLeft {
+    text-align: left;
+  }
+  
+  .textoLeft p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .textoLeft strong {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .textoLeft ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .textoLeft li {
+    margin-bottom: 10px;
+  }
+  
+  /* Breakpoint: Tablets (768px - 1024px) */
+  @media (min-width: 768px) {
+    .container {
+      margin: 40px auto;
+      max-width: 700px;
+    }
+  
+    .container h2 {
+      font-size: 2.2rem;
+    }
+  
+    .textoLeft p {
+      font-size: 1.1rem;
+    }
+  
+    .textoLeft strong {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Breakpoint: Desktop (1024px and above) */
+  @media (min-width: 1024px) {
+    .container {
+      margin: 60px auto;
+      max-width: 900px;
+    }
+  
+    .container h2 {
+      font-size: 2.5rem;
+    }
+  
+    .textoLeft p {
+      font-size: 1.2rem;
+    }
+  
+    .textoLeft strong {
+      font-size: 1.5rem;
+    }
+  }
+  

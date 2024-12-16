@@ -1,11 +1,12 @@
-import { campamento } from "../../assets/index";
+import Image from "next/image";
+import { campamento } from "../../../public/assets/index";
 import WeatherWidget from "../../components/WeatherWidget/WeatherWidget";
 
 const Campamentos = () => {
   return (
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h3 style={{ textAlign: 'center', color: '#2c3e50' }}>Campamentos Tauki</h3>
-      <img 
+      <Image 
         src={campamento} 
         alt="Campamento Tauki" 
         style={{ width: '100%', height: 'auto', borderRadius: '10px', marginBottom: '20px' }}

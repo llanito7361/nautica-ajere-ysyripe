@@ -1,66 +1,69 @@
 /* Contenedor principal */
 .visualContact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  /* Imagen */
-  .contacImg {
-    max-width: 100%;
-    height: auto; /* Mantener proporción */
-    border-radius: 8px;
-  }
-  
-  /* Párrafo */
-  .contactVisualParagraph {
-    font-size: 1rem;
-    line-height: 1.5;
-    /* color: #333; */
-    color: black;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  /* Breakpoints */
-  
-  /* Tablet (768px - 1024px) */
-  @media (min-width: 768px) {
-    .visualContact {
-      flex-direction: row;
+  display: flex;
+  flex-direction: column; /* Por defecto en columna */
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Imagen */
+.contacImg {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene proporción */
+  border-radius: 8px;
+  max-width: 600px; /* Máximo igual que el texto */
+}
+
+/* Párrafo */
+.contactVisualParagraph {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Breakpoints */
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) {
+  .visualContact {
+      flex-direction: row; /* En fila para tablet */
       justify-content: center;
       align-items: flex-start;
       text-align: left;
       gap: 2rem;
-    }
-  
-    .contacImg {
+  }
+
+  .contacImg {
       max-width: 50%; /* Imagen ocupa la mitad del contenedor */
-    }
-  
-    .contactVisualParagraph {
+  }
+
+  .contactVisualParagraph {
       font-size: 1.125rem;
       line-height: 1.75;
-    }
   }
-  
-  /* Desktop (>1024px) */
-  @media (min-width: 1024px) {
-    .visualContact {
+}
+
+/* Desktop (>1024px) */
+@media (min-width: 1024px) {
+  .visualContact {
+      flex-direction: column; /* En columna */
+      align-items: center;
+      text-align: center; /* Centrar texto nuevamente */
       max-width: 1200px;
       margin: 0 auto;
-    }
-  
-    .contacImg {
-      max-width: 40%; /* Imagen ocupa el 40% */
-    }
-  
-    .contactVisualParagraph {
+  }
+
+  .contacImg {
+      max-width: 600px; /* Imagen ocupa el mismo ancho que el texto */
+      height: auto; /* Mantiene proporción */
+  }
+
+  .contactVisualParagraph {
       font-size: 1.25rem;
       line-height: 1.85;
-    }
   }
-  
+}

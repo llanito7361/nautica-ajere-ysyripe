@@ -1,0 +1,53 @@
+
+/* Contenedor principal de la página */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Contenedor de la imagen */
+  .imageContainer {
+    width: 100vw; /* Ocupa el ancho completo del viewport */
+    /* height: 80vh; Altura máxima: 80% del viewport */
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+    position: relative; /* Necesario para posicionar correctamente la imagen */
+  }
+  
+  /* Estilo de la imagen */
+  .image {
+    object-fit: cover; /* Cubre el contenedor manteniendo proporciones */
+    width: 100%; /* Siempre ocupa el ancho total */
+    height: 100%; /* Ajusta la altura según el contenedor */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px -4px 8px rgba(0, 0, 0, 0.3);
+    z-index:-1
+  }
+  
+  /* Títulos y descripción */
+  .title {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .description {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .imageContainer {
+      height: 50vh; /* Menor altura en pantallas pequeñas */
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+  

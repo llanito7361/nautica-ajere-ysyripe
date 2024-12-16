@@ -29,7 +29,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-    title: 'Tu Proyecto',
+    title: 'Ajere Ysyrype Nautica',
     description: 'Descripción de tu aplicación',
 };
 

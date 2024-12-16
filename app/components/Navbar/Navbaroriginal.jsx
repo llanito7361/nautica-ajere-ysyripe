@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import styles from './NavBar.module.css';
+import styles from './Navbaroriginal.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import logowhite from '../../assets/logowhite.jpg';
-import hamburguermenu from '../../assets/icons/hamburguermenu.jpg'; // Ajusta esta ruta si es necesario
+import logowhite from '../../../public/assets/logowhite.jpg';
+import hamburguermenu from '../../../public/assets/icons/hamburguermenu.jpg'; // Ajusta esta ruta si es necesario
 
 const NavBar = () => {
   const [showDropdown, setShowDropdown] = useState(false); // Estado del dropdown para desktop
@@ -14,6 +14,18 @@ const NavBar = () => {
   const toggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu);
   };
+
+  const DropdownEventos = ( ) => {
+
+    return(
+    
+            <div className={styles.dropdown}>
+              <Link className={styles.navlink} href="/eventos/travesias">Travesías</Link>
+              <Link className={styles.navlink} href="/eventos/escuela">Escuela</Link>
+              <Link className={styles.navlink} href="/eventos/campamentos">Campamentos</Link>
+            </div>
+     )
+  }
 
   return (
     <div className={styles.navbar}>
@@ -26,6 +38,8 @@ const NavBar = () => {
 
       {/* Menú principal (desktop) */}
       <div className={`${styles.linksRight} ${styles.desktopOnly}`}>
+       
+       {/*  */}
         <div
           className={styles.dropdownContainer}
           onMouseEnter={() => setShowDropdown(true)}
@@ -35,24 +49,37 @@ const NavBar = () => {
             Eventos
           </Link>
           {showDropdown && (
-            <div className={styles.dropdown}>
-              <Link className={styles.navlink} href="/eventos/travesias">Travesías</Link>
-              <Link className={styles.navlink} href="/eventos/escuela">Escuela</Link>
-              <Link className={styles.navlink} href="/eventos/campamentos">Campamentos</Link>
-            </div>
+            // <div className={styles.dropdown}>
+            //   <Link className={styles.navlink} href="/eventos/travesias">Travesías</Link>
+            //   <Link className={styles.navlink} href="/eventos/escuela">Escuela</Link>
+            //   <Link className={styles.navlink} href="/eventos/campamentos">Campamentos</Link>
+            // </div>
+            <DropdownEventos/>
           )}
         </div>
+
+        {/*  */}
         <Link className={styles.navlink} href="/sobrenosotros">Sobre Nosotros</Link>
         <Link className={styles.navlink} href="/contactanos">Contáctanos</Link>
       </div>
 
       {/* Ícono de menú hamburguesa */}
-      <div className={`${styles.hamburgerIcon} ${styles.mobileOnly}`} onClick={toggleMobileMenu}>
+      <div 
+      className={`${styles.hamburgerIcon} ${styles.mobileOnly}`} 
+      onClick={toggleMobileMenu}
+      aria-expanded ={showMobileMenu}
+      role='button'
+      tabIndex='0'
+      >
         <Image className={styles.hamburgerIconImage} src={hamburguermenu} alt="Menú" />
+
+
+
       </div>
 
-      {/* Menú móvil */}
-      {showMobileMenu && (
+      {/* Menú móvil , aca abajo ppposicion original*/}
+         
+        {showMobileMenu && (
         <div className={styles.mobileDropdown}>
           <Link className={styles.navlink} href="/eventos/travesias">Eventos</Link>
           <Link className={styles.navlink} href="/eventos/escuela">Escuela</Link>
@@ -60,7 +87,7 @@ const NavBar = () => {
           <Link className={styles.navlink} href="/sobrenosotros">Sobre Nosotros</Link>
           <Link className={styles.navlink} href="/contactanos">Contáctanos</Link>
         </div>
-      )}
+      )} 
     </div>
   );
 };

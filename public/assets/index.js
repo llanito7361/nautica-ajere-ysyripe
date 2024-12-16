@@ -4,11 +4,13 @@ import rabaska2 from './rabaska2.png'
 import travelgroup1 from './travelgroup1.png'
 import tour from './tour.jpg'
 import campamento from './campamento.jpg'
+import fogon from './fogon.jpg'
 
 export   {heberwithgroup,
     rabaska1,
     rabaska2,
     travelgroup1,
     tour,
-    campamento
+    campamento,
+    fogon
 }

@@ -3,8 +3,8 @@ import { useState } from 'react';
 import styles from './NavBar.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import logowhite from '../../assets/logowhite.jpg';
-import hamburguermenu from '../../assets/icons/hamburguermenu.jpg';
+import logowhite from '../../../public/assets/logowhite.jpg';
+import hamburguermenu from '../../../public/assets/icons/hamburguermenu.jpg';
 
 const NavBar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -26,7 +26,7 @@ const NavBar = () => {
       <div
         className={ styles.linksRight }
       >
-        <Link
+        {/* <Link
           className={styles.navlink}
           href="/eventos/travesias"
           onClick={() => setShowMobileMenu(false)}
@@ -46,7 +46,7 @@ const NavBar = () => {
           onClick={() => setShowMobileMenu(false)}
         >
           Campamentos
-        </Link>
+        </Link> */}
         <Link
           className={styles.navlink}
           href="/sobrenosotros"
@@ -54,13 +54,13 @@ const NavBar = () => {
         >
           Sobre Nosotros
         </Link>
-        <Link
+        {/* <Link
           className={styles.navlink}
           href="/contactanos"
           onClick={() => setShowMobileMenu(false)}
         >
           Contáctanos
-        </Link>
+        </Link> */}
       </div>
 
 

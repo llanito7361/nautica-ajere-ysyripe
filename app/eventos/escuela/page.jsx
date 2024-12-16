@@ -1,20 +1,18 @@
-import React from 'react'
-import {heberwithgroup,
-  rabaska1,
-  // rabaska2,
-  travelgroup1,} from '../../assets/index.js'
-
-
+import React from "react";
+import { heberwithgroup } from "../../../public/assets/index.js";
+import Image from "next/image";
+import styles from "./escuela.module.css";
 
 const Escuela = () => {
   return (
-    <div>
-      <h2 style={{ textAlign: 'center' }}>ESCUELA NÁUTICA DEPORTIVA</h2>
-      <img src={heberwithgroup}  alt="asd" />
-      <div className="textoLeft">
+    <div className={styles.container}>
+      <h2>ESCUELA NÁUTICA DEPORTIVA</h2>
+      <Image src={heberwithgroup} alt="Imagen no encontrada" className={styles.image} />
+      <div className={styles.textoLeft}>
         <p>
-          Nuestra Escuela Náutica Deportiva es un espacio dedicado a promover y enseñar disciplinas náuticas como el remo, el kayak y la navegación. 
-          Con un enfoque tanto práctico como teórico, ofrecemos a los participantes la oportunidad de disfrutar del deporte en un ambiente seguro, al mismo tiempo que desarrollan habilidades y conocimientos que pueden llevarlos desde la recreación hasta la competencia.
+          Nuestra Escuela Náutica Deportiva es un espacio dedicado a promover y enseñar disciplinas náuticas como el remo, el kayak y la navegación.
+          Con un enfoque tanto práctico como teórico, ofrecemos a los participantes la oportunidad de disfrutar del deporte en un ambiente seguro,
+          al mismo tiempo que desarrollan habilidades y conocimientos que pueden llevarlos desde la recreación hasta la competencia.
         </p>
         <strong>Propósitos</strong>
         <ul>
@@ -65,6 +63,6 @@ const Escuela = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Escuela
+export default Escuela;
