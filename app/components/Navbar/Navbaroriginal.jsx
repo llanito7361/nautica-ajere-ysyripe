@@ -83,9 +83,10 @@ const NavBar = () => {
          
         {showMobileMenu && (
         <div className={styles.mobileDropdown}>
-          <Link className={styles.navlink} href="/eventos/travesias">Eventos</Link>
+          <Link className={styles.navlink} href="/eventos/travesias">Travesias</Link>
           <Link className={styles.navlink} href="/eventos/escuela">Escuela</Link>
           <Link className={styles.navlink} href="/eventos/campamentos">Campamentos</Link>
+          <Link className={styles.navlink} href="/eventos/colonia">Colonia</Link>
           <Link className={styles.navlink} href="/sobrenosotros">Sobre Nosotros</Link>
           <Link className={styles.navlink} href="/contactanos">Contáctanos</Link>
         </div>
