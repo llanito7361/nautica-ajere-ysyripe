@@ -7,7 +7,7 @@ const Colonia = () => {
       <h1 className={styles.title}>Colonia de Lunes a Jueves</h1>
       <p className={styles.description}>
         Disfruta de una experiencia única con nuestra colonia, diseñada para brindar diversión y aprendizaje a los más pequeños. 
-        De lunes a jueves, de 8 a 12 AM, ofrecemos actividades como escuela de natación, deportes y juegos al aire libre, además de una colación para recargar energías.
+        De martes a viernes, de 8 a 12 AM, ofrecemos actividades como escuela de natación, deportes y juegos al aire libre, además de una colación para recargar energías.
       </p>
 
       <section className={styles.activities}>
@@ -21,7 +21,7 @@ const Colonia = () => {
 
       <section className={styles.schedule}>
         <h2>Horario</h2>
-        <p>Lunes a Jueves: 8:00 AM - 12:00 PM</p>
+        <p>martes a viernes: 8:00 AM - 12:00 PM</p>
       </section>
 
       <section className={styles.location}>
