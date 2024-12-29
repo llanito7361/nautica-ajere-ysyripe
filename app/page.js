@@ -71,7 +71,7 @@ const Inicio = () => {
       <h1 className={styles.title}>
         Nautica Ajere Ysyripe - Canotaje en Formosa, Argentina
       </h1>
-      <p className={styles.description}>Experiencias náuticas, ¿te sumás?</p>
+      <h2 className={styles.description}>Experiencias náuticas, ¿te sumás?</h2>
       <TresBotones />
       <Carrusel />
       {/* <WeatherWidget /> */}

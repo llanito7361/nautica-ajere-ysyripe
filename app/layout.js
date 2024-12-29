@@ -29,7 +29,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-    title: 'Ajere Ysyrype Nautica',
+    title: 'Náutica Formosa Ajere Ysyrype',
     description: 'Descripción de tu aplicación',
 };
 
