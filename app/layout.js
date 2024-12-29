@@ -30,7 +30,7 @@ const inter = Inter({
 
 export const metadata = {
     title: 'Náutica Formosa Ajere Ysyrype',
-    description: 'Descripción de tu aplicación',
+    description: 'náutica, Formosa, embarcaciones, servicios náuticos, accesorios náutico',
 };
 
 export default function RootLayout({ children }) {
