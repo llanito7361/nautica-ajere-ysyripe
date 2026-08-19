@@ -5,8 +5,7 @@ import {
   whatsapp,
 } from "../../../public/assets/icons/index";
 import Image from "next/image";
-const URL_FACEBOOK =
-  "https://web.facebook.com/Dr.Notebooks/?locale=es_LA&_rdc=1&_rdr";
+const URL_FACEBOOK = "https://www.facebook.com/nauticaajereysyrype";
 const URL_INSTAGRAM = "https://www.instagram.com/nautica.ajere.ysyrype/";
 
 const AsideButtons = () => {
